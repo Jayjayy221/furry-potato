@@ -1,0 +1,32 @@
+package com.company;
+
+import java.math.BigInteger;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Rational myRational = new Rational();
+
+        Rational thisRational = new Rational(5,7);
+
+
+        myRational.printRational();
+    }
+
+}
+
+class Rational {
+
+    int nominator;
+    int denominator;
+
+    public Rational() {
+        nominator = 0;
+        denominator = 1;
+    }
+
+    public void printRational(){
+        System.out.println(nominator + "/" + denominator);
+    }
+}
